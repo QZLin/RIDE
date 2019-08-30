@@ -1,0 +1,37 @@
+<!--suppress ALL -->
+<idea-plugin>
+    <id>com.qzlin.ride</id>
+    <name>RedAlert3 Mod IDE</name>
+    <version>0.3 Beta</version>
+    <vendor email="qzlin01@163.com" url="https://github.com/QZLin">Q.Z.Lin</vendor>
+    <description>IDE for RedAlert3</description>
+    <change-notes>This is a test version</change-notes>
+
+    <idea-version since-build="173.0"/>
+    <depends>com.intellij.modules.lang</depends>
+    <extensions defaultExtensionNs="com.intellij"/>
+
+    <actions>
+        <group id="plugin.tool" text="_Mod">
+            <add-to-group group-id="MainMenu" anchor="after" relative-to-action="HelpMenu"/>
+
+            <action class="model.tool.environment" id="tool.environment" text="建立环境"/>
+            <action class="model.tool.options" text="构建选项"/>
+
+            <separator/>
+            <action class="model.tool.template" id="tool.template" text="生成模板工程"/>
+
+            <group id="plugin.tool.generator" text="生成模板代码" popup="true">
+                <action class="model.tool.generator.weapon" text="武器"/>
+                <action class="model.tool.generator.portrait" text="肖像"/>
+                <action class="model.tool.generator.armor" text="装甲"/>
+            </group>
+
+            <separator/>
+            <group id="plugin.tool.reference">
+                <action class="model.tool.reference" text="Xml参考"/>
+            </group>
+        </group>
+    </actions>
+
+</idea-plugin>
