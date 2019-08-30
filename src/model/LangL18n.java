@@ -12,7 +12,7 @@ public class LangL18n {
         bundle = ResourceBundle.getBundle("ride", locale);
     }
 
-    String get(String key) {
+    public String get(String key) {
         return bundle.getString(key);
     }
 }

@@ -5,6 +5,7 @@ import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
+import model.LangL18n;
 
 import java.io.IOException;
 
@@ -33,7 +34,8 @@ public class reference extends AnAction {
         try {
             Runtime.getRuntime().exec("explorer " + xmlPath);
         } catch (IOException e) {
-            Messages.showErrorDialog("Cannot open folder of sagexml", "Error");
+            LangL18n lang = new LangL18n();
+            Messages.showErrorDialog(lang.get("sagexml_not_found"), lang.get("error"));
         }
     }
 

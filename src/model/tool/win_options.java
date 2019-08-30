@@ -1,5 +1,7 @@
 package model.tool;
 
+import model.LangL18n;
+
 import javax.swing.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -26,8 +28,10 @@ public class win_options {
     }
 
     static void Show() {
+        LangL18n lang = new LangL18n();
+
         frame = new JFrame("win_options");
-        frame.setTitle("Build Options");
+        frame.setTitle(lang.get("build_option"));
         frame.setContentPane(new win_options().Panel);
         frame.setAlwaysOnTop(true);
         frame.pack();
