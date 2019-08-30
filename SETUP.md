@@ -1,4 +1,5 @@
-#安装指南
+安装指南
+=
 
 **首先，确保您的RA3 MOD SDK正常可用且为1.3版本。**
 
@@ -17,6 +18,6 @@
  Install Plugin form Disk...`选择之前下载的插件（`RIDE.jar`）。
  然后重启`Pycharm`
  
-5. 下载`msauto.exe` [msauto.exe]()
+5. 下载`msauto.exe` [msauto.exe](./msauto.exe)
 
 6. 将`msauto.exe`复制到RA3 MOD SDK 根目录下
