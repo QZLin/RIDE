@@ -14,9 +14,12 @@ import java.nio.charset.StandardCharsets;
 
 public class QFileManager {
     private String root;
+    private LangL18n lang;
 
     public QFileManager(String root) {
         this.root = root + "/";
+
+        lang = new LangL18n();
     }
 
     public void createFile(String path, String text, Project project) {
@@ -24,8 +27,8 @@ public class QFileManager {
         File file = new File(path);
 
         if (file.exists()) {
-            int answer = Messages.showOkCancelDialog(project, "Do you want to override the file \"" + path + "\"?",
-                    "Override Warning", "Override", "Cancel", Messages.getQuestionIcon());
+            int answer = Messages.showOkCancelDialog(project, String.format(lang.get("override_war_text"), path),
+                    lang.get("override_war_title"), lang.get("override_ok"), lang.get("override_cancel"), Messages.getQuestionIcon());
             if (answer != Messages.OK) {
                 return;
             }
@@ -40,7 +43,7 @@ public class QFileManager {
 
             outputStreamWriter.close();
         } catch (IOException e) {
-            System.out.println(String.format("File `%s` Create error!", path));
+            System.out.println(String.format(lang.get("file_create_error"), path));
         }
     }
 
@@ -50,8 +53,8 @@ public class QFileManager {
         java.io.File file = new java.io.File(path);
 
         if (file.exists()) {
-            int answer = Messages.showOkCancelDialog(project, "Do you want to override the folder \"" + path + "\"?",
-                    "Generate", "Override", "Cancel", Messages.getQuestionIcon());
+            int answer = Messages.showOkCancelDialog(project, String.format(lang.get("override_folder_war_text"), path),
+                    lang.get("override_war_title"), lang.get("override_ok"), lang.get("override_cancel"), Messages.getQuestionIcon());
             if (answer != Messages.OK) {
                 return;
             }
