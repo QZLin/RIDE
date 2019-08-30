@@ -1,7 +1,7 @@
 开始新的项目
 -
 在安装ride之后，打开Pycharm。
-如果您是第一次使用，可以根自的喜好对Pycharm进行一些调整，
+如果您是第一次使用，可以根自已的喜好对Pycharm进行一些调整，
 不会对ride产生影响。
 ![1](./doc_img/1.png)  
 * 当出现欢迎界面时，选择`Create New Project`
