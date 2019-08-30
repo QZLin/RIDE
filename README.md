@@ -16,4 +16,4 @@ Mod的编译和运行则由Python脚本调用特殊处理过的mod sdk完成。
 
 安装指南
 -
-[SETUP.md](https://github.com/QZLin/RIDE/blob/master/SETUP.md)
+[SETUP.md](./SETUP.md)
