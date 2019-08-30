@@ -14,6 +14,8 @@ ride负责生成工程和模板代码等RA3 Modding专有操作。
 Mod的编译和运行则由Python脚本调用特殊处理过的mod sdk完成。
 所以，**使用ride仍然需要Mod SDK。**
 
-安装指南
+[安装指南](./SETUP.md)
 -
-[SETUP.md](./SETUP.md)
+
+[RIDE使用说明](LIST.md)
+-
