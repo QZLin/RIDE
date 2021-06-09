@@ -1,6 +1,8 @@
 RIDE
 =
 
+> **这其实是一个idea的插件(jetbrain全家桶可用)，你甚至可以参考这个项目开发idea插件！**
+
 RIDE`RedAlert3 Mod IDE`是为命令与征服：红色警戒3设计的IDE。
 通过ride可以快速的进行生成工程、调试mod等操作，
 将大量的窗口（如modsdk、文本编辑器）整合到一个界面中。
